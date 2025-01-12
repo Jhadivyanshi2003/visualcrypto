@@ -3,9 +3,7 @@
 
 from PIL import Image import random
 
-def generate_shares(image_path, output_path_share1, output_path_share2):
-    # Load the image
-    
+def generate_shares():
     image = Image.open(image_path).convert('1')  # Convert image to black and white
     width, height = image.size
 
