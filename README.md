@@ -1,7 +1,8 @@
 
 #code to obtain cryptographyical images of original image
 
-from PIL import Image import random
+from PIL import Image 
+import random
 
 def generate_shares():
     image = Image.open(image_path).convert('1')  # Convert image to black and white
