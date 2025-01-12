@@ -2,9 +2,12 @@
 #code to obtain cryptographyical images of original image
 
 from PIL import Image
+
 import random
+
 def generate_shares(image_path, output_path_share1, output_path_share2):
     # Load the image
+    
     image = Image.open(image_path).convert('1')  # Convert image to black and white
     width, height = image.size
 
@@ -43,7 +46,7 @@ def generate_shares(image_path, output_path_share1, output_path_share2):
     share1.save(output_path_share1)
     share2.save(output_path_share2)
 
-def combine_shares(share1_path, share2_path, output_path_combined):
+    def combine_shares(share1_path, share2_path, output_path_combined):
     # Load shares
     share1 = Image.open(share1_path)
     share2 = Image.open(share2_path)
