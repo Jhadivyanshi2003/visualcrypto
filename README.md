@@ -1,4 +1,4 @@
-# visualcrypto
+
 #code to obtain cryptographyical images of original image
 
 from PIL import Image
@@ -67,8 +67,6 @@ def combine_shares(share1_path, share2_path, output_path_combined):
 
     # Save the combined result
     combined.save(output_path_combined)
-
-# Example usage
 generate_shares("C:\\Users\\Divyanshi Jha\\Downloads\\input_image.png", "C:\\Users\\Divyanshi Jha\\Downloads\\share1.png", "C:\\Users\\Divyanshi Jha\\Downloads\\share2.png")
 
 combine_shares("share1.png", "share2.png", "combined_output.png")
@@ -103,12 +101,8 @@ def combine_shares(share1_path, share2_path, output_combined_path):
     plt.imshow(combined_image, cmap='gray')
     plt.axis('off')
     plt.show()
-
-# Paths to the two shares and output
 share1_path = 'share1.png'
 share2_path = 'share2.png'
 output_combined_path = 'combined.png'
-
-# Combine the shares
 combine_shares(share1_path, share2_path, output_combined_path)
 
