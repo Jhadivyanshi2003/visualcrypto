@@ -73,7 +73,3 @@ print("done")
 
 
   
-share2_path = 'share2.png'
-output_combined_path = 'combined.png'
-combine_shares(share1_path, share2_path, output_combined_path)
-
